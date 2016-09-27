@@ -1,0 +1,1379 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		445A250A1D83CCEC002A965F /* lustre.c in Sources */ = {isa = PBXBuildFile; fileRef = 445A24DF1D83CB85002A965F /* lustre.c */; };
+		445A25111D844A58002A965F /* mount_lustre in Resources */ = {isa = PBXBuildFile; fileRef = 445A24F21D83CBBE002A965F /* mount_lustre */; };
+		445A25BD1D84978D002A965F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 445A252B1D84978D002A965F /* AppDelegate.m */; };
+		445A25BE1D84978D002A965F /* com.ciderapps.lustre.Utility.plist in Resources */ = {isa = PBXBuildFile; fileRef = 445A252C1D84978D002A965F /* com.ciderapps.lustre.Utility.plist */; };
+		445A25C11D84978D002A965F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 445A25301D84978D002A965F /* main.m */; };
+		445A25C21D84978D002A965F /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 445A25331D84978D002A965F /* MainMenu.xib */; };
+		445A25C51D84978D002A965F /* LFSMachine.m in Sources */ = {isa = PBXBuildFile; fileRef = 445A253B1D84978D002A965F /* LFSMachine.m */; };
+		445A25C61D84978D002A965F /* LFSMachineDaemon.m in Sources */ = {isa = PBXBuildFile; fileRef = 445A253D1D84978D002A965F /* LFSMachineDaemon.m */; };
+		445A25C71D84978D002A965F /* LFSMachineRunner.m in Sources */ = {isa = PBXBuildFile; fileRef = 445A253F1D84978D002A965F /* LFSMachineRunner.m */; };
+		445A25CE1D84978D002A965F /* LFSRealMachine.m in Sources */ = {isa = PBXBuildFile; fileRef = 445A254D1D84978D002A965F /* LFSRealMachine.m */; };
+		445A25D01D84978D002A965F /* LFSVirtualMachine.m in Sources */ = {isa = PBXBuildFile; fileRef = 445A25511D84978D002A965F /* LFSVirtualMachine.m */; };
+		445A25D11D84978D002A965F /* LFSVix.m in Sources */ = {isa = PBXBuildFile; fileRef = 445A25531D84978D002A965F /* LFSVix.m */; };
+		445A26231D849882002A965F /* open_source_licenses.txt in Resources */ = {isa = PBXBuildFile; fileRef = 445A26161D849882002A965F /* open_source_licenses.txt */; };
+		445A26251D849898002A965F /* Utility.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 445A26241D849898002A965F /* Utility.xcassets */; };
+		445A26431D85AD80002A965F /* test.c in Sources */ = {isa = PBXBuildFile; fileRef = 445A263C1D85AD80002A965F /* test.c */; };
+		445A26441D85AD80002A965F /* test.h in Headers */ = {isa = PBXBuildFile; fileRef = 445A263D1D85AD80002A965F /* test.h */; };
+		445A26451D85AD80002A965F /* sample_test.c in Sources */ = {isa = PBXBuildFile; fileRef = 445A263E1D85AD80002A965F /* sample_test.c */; };
+		445A265B1D85D4AF002A965F /* test_listings.h in Headers */ = {isa = PBXBuildFile; fileRef = 445A265A1D85D4AF002A965F /* test_listings.h */; };
+		445A265C1D85D7C8002A965F /* LFSTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 445A26471D85AD96002A965F /* LFSTestCase.m */; };
+		445A26761D85DC1F002A965F /* netfs.m in Sources */ = {isa = PBXBuildFile; fileRef = 445A26741D85DC1F002A965F /* netfs.m */; };
+		445A267C1D85E4E7002A965F /* libvixAllProducts.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = 445A26151D849882002A965F /* libvixAllProducts.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		445A268D1D863B5B002A965F /* lustre.h in Headers */ = {isa = PBXBuildFile; fileRef = 445A267F1D863B5B002A965F /* lustre.h */; };
+		445A268E1D863B5B002A965F /* apple_private.c in Sources */ = {isa = PBXBuildFile; fileRef = 445A26811D863B5B002A965F /* apple_private.c */; };
+		445A268F1D863B5B002A965F /* apple_private.h in Headers */ = {isa = PBXBuildFile; fileRef = 445A26821D863B5B002A965F /* apple_private.h */; };
+		445A26901D863B5B002A965F /* apple_private_functions.h in Headers */ = {isa = PBXBuildFile; fileRef = 445A26831D863B5B002A965F /* apple_private_functions.h */; };
+		445A26911D863B5B002A965F /* apple_private_types.h in Headers */ = {isa = PBXBuildFile; fileRef = 445A26841D863B5B002A965F /* apple_private_types.h */; };
+		445A26921D863B5B002A965F /* assert.h in Headers */ = {isa = PBXBuildFile; fileRef = 445A26851D863B5B002A965F /* assert.h */; };
+		445A26931D863B5B002A965F /* list.c in Sources */ = {isa = PBXBuildFile; fileRef = 445A26861D863B5B002A965F /* list.c */; };
+		445A26941D863B5B002A965F /* list.h in Headers */ = {isa = PBXBuildFile; fileRef = 445A26871D863B5B002A965F /* list.h */; };
+		445A26951D863B5B002A965F /* logging.c in Sources */ = {isa = PBXBuildFile; fileRef = 445A26881D863B5B002A965F /* logging.c */; };
+		445A26961D863B5B002A965F /* logging.h in Headers */ = {isa = PBXBuildFile; fileRef = 445A26891D863B5B002A965F /* logging.h */; };
+		445A26971D863B5B002A965F /* rb_tree.c in Sources */ = {isa = PBXBuildFile; fileRef = 445A268A1D863B5B002A965F /* rb_tree.c */; };
+		445A26981D863B5B002A965F /* rb_tree.h in Headers */ = {isa = PBXBuildFile; fileRef = 445A268B1D863B5B002A965F /* rb_tree.h */; };
+		445A269C1D8721F6002A965F /* libvixAllProducts.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 445A26151D849882002A965F /* libvixAllProducts.dylib */; };
+		445FC35A1D89EF9500022D53 /* LFSMount.m in Sources */ = {isa = PBXBuildFile; fileRef = 447B1FDB1D88370800D542CE /* LFSMount.m */; };
+		445FC35B1D89EF9800022D53 /* LFSMount.m in Sources */ = {isa = PBXBuildFile; fileRef = 447B1FDB1D88370800D542CE /* LFSMount.m */; };
+		445FC35C1D8B392B00022D53 /* lustre.icns in Resources */ = {isa = PBXBuildFile; fileRef = 445A24E31D83CB85002A965F /* lustre.icns */; };
+		447B1FDE1D88371900D542CE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 447B1FDD1D88371900D542CE /* main.m */; };
+		447B1FE01D88485900D542CE /* LFSMountTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 447B1FDF1D88485900D542CE /* LFSMountTestCase.m */; };
+		447B1FE11D88486500D542CE /* LFSMount.m in Sources */ = {isa = PBXBuildFile; fileRef = 447B1FDB1D88370800D542CE /* LFSMount.m */; };
+		4482F8691D9620B0001B8C3E /* volume.h in Headers */ = {isa = PBXBuildFile; fileRef = 4482F8671D9620B0001B8C3E /* volume.h */; };
+		4482F86A1D9620B6001B8C3E /* volume.c in Sources */ = {isa = PBXBuildFile; fileRef = 4482F8661D9620B0001B8C3E /* volume.c */; };
+		44C6DF3C1D8C6DF4007CAA7C /* mount.c in Sources */ = {isa = PBXBuildFile; fileRef = 44D0BD6A1D87327A00742637 /* mount.c */; };
+		44C6DF3D1D8C7440007CAA7C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 445FC3681D8C647000022D53 /* InfoPlist.strings */; };
+		44C6DF3E1D9072DD007CAA7C /* lustre.icns in Resources */ = {isa = PBXBuildFile; fileRef = 445A24E31D83CB85002A965F /* lustre.icns */; };
+		44C6DF3F1D90737C007CAA7C /* lustre.icns in Resources */ = {isa = PBXBuildFile; fileRef = 445A24E31D83CB85002A965F /* lustre.icns */; };
+		44D0BD731D87327A00742637 /* mount.h in Headers */ = {isa = PBXBuildFile; fileRef = 44D0BD6B1D87327A00742637 /* mount.h */; };
+		44D0BD741D87327A00742637 /* vfsop.c in Sources */ = {isa = PBXBuildFile; fileRef = 44D0BD6C1D87327A00742637 /* vfsop.c */; };
+		44D0BD751D87327A00742637 /* vfsop.h in Headers */ = {isa = PBXBuildFile; fileRef = 44D0BD6D1D87327A00742637 /* vfsop.h */; };
+		44D0BD761D87327A00742637 /* vnop.c in Sources */ = {isa = PBXBuildFile; fileRef = 44D0BD6E1D87327A00742637 /* vnop.c */; };
+		44D0BD771D87327A00742637 /* vnop.h in Headers */ = {isa = PBXBuildFile; fileRef = 44D0BD6F1D87327A00742637 /* vnop.h */; };
+		44D0BD7B1D8734FC00742637 /* LFSGeneratedTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 44D0BD7A1D8734FC00742637 /* LFSGeneratedTests.m */; };
+		44E101951D91CBFE00A8E699 /* extensions.c in Sources */ = {isa = PBXBuildFile; fileRef = 44E101931D91CBFE00A8E699 /* extensions.c */; };
+		44E101961D91CBFE00A8E699 /* extensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 44E101941D91CBFE00A8E699 /* extensions.h */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		445A250D1D83CCFF002A965F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 445A24B41D83B48C002A965F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 445A24F11D83CBBE002A965F;
+			remoteInfo = mount;
+		};
+		445A26341D85AC73002A965F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 445A24B41D83B48C002A965F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 445A24BC1D83B48C002A965F;
+			remoteInfo = Filesystem;
+		};
+		445A26541D85ADBB002A965F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 445A24B41D83B48C002A965F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 445A25171D849741002A965F;
+			remoteInfo = Utility;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		445A24F01D83CBBE002A965F /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		445A267B1D85E4D8002A965F /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				445A267C1D85E4E7002A965F /* libvixAllProducts.dylib in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		445A24BD1D83B48C002A965F /* lustre.fs */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = lustre.fs; sourceTree = BUILT_PRODUCTS_DIR; };
+		445A24DF1D83CB85002A965F /* lustre.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = lustre.c; sourceTree = "<group>"; };
+		445A24E31D83CB85002A965F /* lustre.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = lustre.icns; sourceTree = "<group>"; };
+		445A24F21D83CBBE002A965F /* mount_lustre */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = mount_lustre; sourceTree = BUILT_PRODUCTS_DIR; };
+		445A25021D83CCC8002A965F /* Lustre.kext */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Lustre.kext; sourceTree = BUILT_PRODUCTS_DIR; };
+		445A25121D844E39002A965F /* Extension-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Extension-Info.plist"; sourceTree = "<group>"; };
+		445A25131D844E39002A965F /* Filesystem-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Filesystem-Info.plist"; sourceTree = "<group>"; };
+		445A25181D849741002A965F /* Lustre Utility.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Lustre Utility.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		445A252A1D84978D002A965F /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		445A252B1D84978D002A965F /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		445A252C1D84978D002A965F /* com.ciderapps.lustre.Utility.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = com.ciderapps.lustre.Utility.plist; sourceTree = "<group>"; };
+		445A252F1D84978D002A965F /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		445A25301D84978D002A965F /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		445A25341D84978D002A965F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		445A253A1D84978D002A965F /* LFSMachine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LFSMachine.h; sourceTree = "<group>"; };
+		445A253B1D84978D002A965F /* LFSMachine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LFSMachine.m; sourceTree = "<group>"; };
+		445A253C1D84978D002A965F /* LFSMachineDaemon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LFSMachineDaemon.h; sourceTree = "<group>"; };
+		445A253D1D84978D002A965F /* LFSMachineDaemon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LFSMachineDaemon.m; sourceTree = "<group>"; };
+		445A253E1D84978D002A965F /* LFSMachineRunner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LFSMachineRunner.h; sourceTree = "<group>"; };
+		445A253F1D84978D002A965F /* LFSMachineRunner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LFSMachineRunner.m; sourceTree = "<group>"; };
+		445A254C1D84978D002A965F /* LFSRealMachine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LFSRealMachine.h; sourceTree = "<group>"; };
+		445A254D1D84978D002A965F /* LFSRealMachine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LFSRealMachine.m; sourceTree = "<group>"; };
+		445A25501D84978D002A965F /* LFSVirtualMachine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LFSVirtualMachine.h; sourceTree = "<group>"; };
+		445A25511D84978D002A965F /* LFSVirtualMachine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LFSVirtualMachine.m; sourceTree = "<group>"; };
+		445A25521D84978D002A965F /* LFSVix.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LFSVix.h; sourceTree = "<group>"; };
+		445A25531D84978D002A965F /* LFSVix.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LFSVix.m; sourceTree = "<group>"; };
+		445A26141D849882002A965F /* includeCheck.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = includeCheck.h; sourceTree = "<group>"; };
+		445A26151D849882002A965F /* libvixAllProducts.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libvixAllProducts.dylib; sourceTree = "<group>"; };
+		445A26161D849882002A965F /* open_source_licenses.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = open_source_licenses.txt; sourceTree = "<group>"; };
+		445A26171D849882002A965F /* vix.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vix.h; sourceTree = "<group>"; };
+		445A26181D849882002A965F /* vm_basic_types.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vm_basic_types.h; sourceTree = "<group>"; };
+		445A26241D849898002A965F /* Utility.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Utility.xcassets; sourceTree = "<group>"; };
+		445A26261D849C86002A965F /* Utility.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Utility.xcconfig; sourceTree = "<group>"; };
+		445A262C1D85AC05002A965F /* lustre-test.kext */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "lustre-test.kext"; sourceTree = BUILT_PRODUCTS_DIR; };
+		445A26391D85AD80002A965F /* Test-Extension-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Test-Extension-Info.plist"; sourceTree = "<group>"; };
+		445A263B1D85AD80002A965F /* test_listings_generator.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = test_listings_generator.rb; sourceTree = "<group>"; };
+		445A263C1D85AD80002A965F /* test.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = test.c; sourceTree = "<group>"; };
+		445A263D1D85AD80002A965F /* test.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = test.h; sourceTree = "<group>"; };
+		445A263E1D85AD80002A965F /* sample_test.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = sample_test.c; sourceTree = "<group>"; };
+		445A26461D85AD96002A965F /* LFSTestCase.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LFSTestCase.h; sourceTree = "<group>"; };
+		445A26471D85AD96002A965F /* LFSTestCase.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LFSTestCase.m; sourceTree = "<group>"; };
+		445A26481D85AD96002A965F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		445A264A1D85AD96002A965F /* tests_generator.rb */ = {isa = PBXFileReference; lastKnownFileType = text.script.ruby; path = tests_generator.rb; sourceTree = "<group>"; };
+		445A264F1D85ADBB002A965F /* Test Runner.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Test Runner.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		445A265A1D85D4AF002A965F /* test_listings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = test_listings.h; sourceTree = "<group>"; };
+		445A26641D85DBE7002A965F /* Lustre.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Lustre.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		445A26741D85DC1F002A965F /* netfs.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = netfs.m; sourceTree = "<group>"; };
+		445A26771D85DC35002A965F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		445A267E1D863B5B002A965F /* lustre.exp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.exports; path = lustre.exp; sourceTree = "<group>"; };
+		445A267F1D863B5B002A965F /* lustre.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lustre.h; sourceTree = "<group>"; };
+		445A26811D863B5B002A965F /* apple_private.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = apple_private.c; sourceTree = "<group>"; };
+		445A26821D863B5B002A965F /* apple_private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = apple_private.h; sourceTree = "<group>"; };
+		445A26831D863B5B002A965F /* apple_private_functions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = apple_private_functions.h; sourceTree = "<group>"; };
+		445A26841D863B5B002A965F /* apple_private_types.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = apple_private_types.h; sourceTree = "<group>"; };
+		445A26851D863B5B002A965F /* assert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = assert.h; sourceTree = "<group>"; };
+		445A26861D863B5B002A965F /* list.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = list.c; sourceTree = "<group>"; };
+		445A26871D863B5B002A965F /* list.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = list.h; sourceTree = "<group>"; };
+		445A26881D863B5B002A965F /* logging.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = logging.c; sourceTree = "<group>"; };
+		445A26891D863B5B002A965F /* logging.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = logging.h; sourceTree = "<group>"; };
+		445A268A1D863B5B002A965F /* rb_tree.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = rb_tree.c; sourceTree = "<group>"; };
+		445A268B1D863B5B002A965F /* rb_tree.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rb_tree.h; sourceTree = "<group>"; };
+		445FC35E1D8C29B200022D53 /* constants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = constants.h; sourceTree = "<group>"; };
+		445FC35F1D8C29ED00022D53 /* mount_args.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = mount_args.h; sourceTree = "<group>"; };
+		445FC3691D8C647000022D53 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		447B1FDA1D88370800D542CE /* LFSMount.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LFSMount.h; sourceTree = "<group>"; };
+		447B1FDB1D88370800D542CE /* LFSMount.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LFSMount.m; sourceTree = "<group>"; };
+		447B1FDD1D88371900D542CE /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		447B1FDF1D88485900D542CE /* LFSMountTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LFSMountTestCase.m; sourceTree = "<group>"; };
+		4482F8661D9620B0001B8C3E /* volume.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = volume.c; sourceTree = "<group>"; };
+		4482F8671D9620B0001B8C3E /* volume.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = volume.h; sourceTree = "<group>"; };
+		44BA8EC21D99A8A200312FDA /* Distribution.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Distribution.xml; sourceTree = "<group>"; };
+		44BA8EC31D99A8A200312FDA /* package.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = package.sh; sourceTree = "<group>"; };
+		44BA8EC71D99AA8000312FDA /* Extension-Components.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Extension-Components.plist"; sourceTree = "<group>"; };
+		44BA8EC81D99AA8000312FDA /* Filesystem-Components.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Filesystem-Components.plist"; sourceTree = "<group>"; };
+		44BA8EC91D99AA8000312FDA /* NetFS-Components.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "NetFS-Components.plist"; sourceTree = "<group>"; };
+		44BA8ECC1D99AA8000312FDA /* postinstall */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = postinstall; sourceTree = "<group>"; };
+		44BA8ECD1D99AA8000312FDA /* preinstall */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = preinstall; sourceTree = "<group>"; };
+		44BA8ECF1D99AA8000312FDA /* postinstall */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = postinstall; sourceTree = "<group>"; };
+		44BA8ED01D99AA8000312FDA /* preinstall */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = preinstall; sourceTree = "<group>"; };
+		44BA8ED21D99AA8000312FDA /* postinstall */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = postinstall; sourceTree = "<group>"; };
+		44BA8ED31D99AA8000312FDA /* preinstall */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = preinstall; sourceTree = "<group>"; };
+		44D0BD6A1D87327A00742637 /* mount.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = mount.c; sourceTree = "<group>"; };
+		44D0BD6B1D87327A00742637 /* mount.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mount.h; sourceTree = "<group>"; };
+		44D0BD6C1D87327A00742637 /* vfsop.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = vfsop.c; sourceTree = "<group>"; };
+		44D0BD6D1D87327A00742637 /* vfsop.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vfsop.h; sourceTree = "<group>"; };
+		44D0BD6E1D87327A00742637 /* vnop.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = vnop.c; sourceTree = "<group>"; };
+		44D0BD6F1D87327A00742637 /* vnop.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vnop.h; sourceTree = "<group>"; };
+		44D0BD7A1D8734FC00742637 /* LFSGeneratedTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LFSGeneratedTests.m; sourceTree = "<group>"; };
+		44E1018E1D90DDF100A8E699 /* Utility-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Utility-Prefix.pch"; sourceTree = "<group>"; };
+		44E101931D91CBFE00A8E699 /* extensions.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = extensions.c; sourceTree = "<group>"; };
+		44E101941D91CBFE00A8E699 /* extensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = extensions.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		445A24B91D83B48C002A965F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		445A24EF1D83CBBE002A965F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		445A24FE1D83CCC8002A965F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		445A25151D849741002A965F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				445A269C1D8721F6002A965F /* libvixAllProducts.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		445A26281D85AC05002A965F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		445A264C1D85ADBB002A965F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		445A26611D85DBE7002A965F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		445A24B31D83B48C002A965F = {
+			isa = PBXGroup;
+			children = (
+				445FC35D1D8C29A400022D53 /* Common */,
+				445A24DD1D83CB85002A965F /* Filesystem */,
+				445A24E01D83CB85002A965F /* NetFS */,
+				445A24E81D83CB85002A965F /* Tools */,
+				445A24EC1D83CB85002A965F /* Utility */,
+				445A24E41D83CB85002A965F /* Tests */,
+				445A24E11D83CB85002A965F /* Package */,
+				445A24E21D83CB85002A965F /* Resources */,
+				445A24ED1D83CB85002A965F /* Vendor */,
+				445A24BE1D83B48C002A965F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		445A24BE1D83B48C002A965F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				445A24BD1D83B48C002A965F /* lustre.fs */,
+				445A24F21D83CBBE002A965F /* mount_lustre */,
+				445A25021D83CCC8002A965F /* Lustre.kext */,
+				445A25181D849741002A965F /* Lustre Utility.app */,
+				445A262C1D85AC05002A965F /* lustre-test.kext */,
+				445A264F1D85ADBB002A965F /* Test Runner.xctest */,
+				445A26641D85DBE7002A965F /* Lustre.bundle */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		445A24DD1D83CB85002A965F /* Filesystem */ = {
+			isa = PBXGroup;
+			children = (
+				445FC3681D8C647000022D53 /* InfoPlist.strings */,
+				445A26801D863B5B002A965F /* Utility */,
+				4482F8661D9620B0001B8C3E /* volume.c */,
+				4482F8671D9620B0001B8C3E /* volume.h */,
+				44D0BD6A1D87327A00742637 /* mount.c */,
+				44D0BD6B1D87327A00742637 /* mount.h */,
+				44D0BD6C1D87327A00742637 /* vfsop.c */,
+				44D0BD6D1D87327A00742637 /* vfsop.h */,
+				44D0BD6E1D87327A00742637 /* vnop.c */,
+				44D0BD6F1D87327A00742637 /* vnop.h */,
+				445A24DF1D83CB85002A965F /* lustre.c */,
+				445A267F1D863B5B002A965F /* lustre.h */,
+				445A267E1D863B5B002A965F /* lustre.exp */,
+				445A25121D844E39002A965F /* Extension-Info.plist */,
+				445A25131D844E39002A965F /* Filesystem-Info.plist */,
+			);
+			path = Filesystem;
+			sourceTree = "<group>";
+		};
+		445A24E01D83CB85002A965F /* NetFS */ = {
+			isa = PBXGroup;
+			children = (
+				445A26771D85DC35002A965F /* Info.plist */,
+				445A26741D85DC1F002A965F /* netfs.m */,
+			);
+			path = NetFS;
+			sourceTree = "<group>";
+		};
+		445A24E11D83CB85002A965F /* Package */ = {
+			isa = PBXGroup;
+			children = (
+				44BA8ECA1D99AA8000312FDA /* Scripts */,
+				44BA8EC71D99AA8000312FDA /* Extension-Components.plist */,
+				44BA8EC81D99AA8000312FDA /* Filesystem-Components.plist */,
+				44BA8EC91D99AA8000312FDA /* NetFS-Components.plist */,
+				44BA8EC21D99A8A200312FDA /* Distribution.xml */,
+				44BA8EC31D99A8A200312FDA /* package.sh */,
+			);
+			path = Package;
+			sourceTree = "<group>";
+		};
+		445A24E21D83CB85002A965F /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				445A26241D849898002A965F /* Utility.xcassets */,
+				445A24E31D83CB85002A965F /* lustre.icns */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		445A24E41D83CB85002A965F /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				445A24E51D83CB85002A965F /* Filesystem */,
+				445A24E61D83CB85002A965F /* Filesystem Test Runner */,
+				445A24E71D83CB85002A965F /* NetFS */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		445A24E51D83CB85002A965F /* Filesystem */ = {
+			isa = PBXGroup;
+			children = (
+				445A26591D85D4AF002A965F /* Generated */,
+				445A26391D85AD80002A965F /* Test-Extension-Info.plist */,
+				445A263C1D85AD80002A965F /* test.c */,
+				445A263D1D85AD80002A965F /* test.h */,
+				445A263E1D85AD80002A965F /* sample_test.c */,
+				445A263B1D85AD80002A965F /* test_listings_generator.rb */,
+			);
+			path = Filesystem;
+			sourceTree = "<group>";
+		};
+		445A24E61D83CB85002A965F /* Filesystem Test Runner */ = {
+			isa = PBXGroup;
+			children = (
+				445A265D1D85D80C002A965F /* Generated */,
+				447B1FDF1D88485900D542CE /* LFSMountTestCase.m */,
+				445A26461D85AD96002A965F /* LFSTestCase.h */,
+				445A26471D85AD96002A965F /* LFSTestCase.m */,
+				445A26481D85AD96002A965F /* Info.plist */,
+				445A264A1D85AD96002A965F /* tests_generator.rb */,
+			);
+			path = "Filesystem Test Runner";
+			sourceTree = "<group>";
+		};
+		445A24E71D83CB85002A965F /* NetFS */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = NetFS;
+			sourceTree = "<group>";
+		};
+		445A24E81D83CB85002A965F /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				447B1FDA1D88370800D542CE /* LFSMount.h */,
+				447B1FDB1D88370800D542CE /* LFSMount.m */,
+				447B1FDD1D88371900D542CE /* main.m */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		445A24EC1D83CB85002A965F /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				445A25291D84978D002A965F /* App */,
+				445A25351D84978D002A965F /* Models */,
+				445A25321D84978D002A965F /* Interfaces */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		445A24ED1D83CB85002A965F /* Vendor */ = {
+			isa = PBXGroup;
+			children = (
+				445A26131D849882002A965F /* VMWare */,
+			);
+			path = Vendor;
+			sourceTree = "<group>";
+		};
+		445A25291D84978D002A965F /* App */ = {
+			isa = PBXGroup;
+			children = (
+				445A252A1D84978D002A965F /* AppDelegate.h */,
+				445A252B1D84978D002A965F /* AppDelegate.m */,
+				445A252F1D84978D002A965F /* Info.plist */,
+				445A25301D84978D002A965F /* main.m */,
+				44E1018E1D90DDF100A8E699 /* Utility-Prefix.pch */,
+				445A252C1D84978D002A965F /* com.ciderapps.lustre.Utility.plist */,
+				445A26261D849C86002A965F /* Utility.xcconfig */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		445A25321D84978D002A965F /* Interfaces */ = {
+			isa = PBXGroup;
+			children = (
+				445A25331D84978D002A965F /* MainMenu.xib */,
+			);
+			path = Interfaces;
+			sourceTree = "<group>";
+		};
+		445A25351D84978D002A965F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				445A253A1D84978D002A965F /* LFSMachine.h */,
+				445A253B1D84978D002A965F /* LFSMachine.m */,
+				445A253C1D84978D002A965F /* LFSMachineDaemon.h */,
+				445A253D1D84978D002A965F /* LFSMachineDaemon.m */,
+				445A253E1D84978D002A965F /* LFSMachineRunner.h */,
+				445A253F1D84978D002A965F /* LFSMachineRunner.m */,
+				445A254C1D84978D002A965F /* LFSRealMachine.h */,
+				445A254D1D84978D002A965F /* LFSRealMachine.m */,
+				445A25501D84978D002A965F /* LFSVirtualMachine.h */,
+				445A25511D84978D002A965F /* LFSVirtualMachine.m */,
+				445A25521D84978D002A965F /* LFSVix.h */,
+				445A25531D84978D002A965F /* LFSVix.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		445A26131D849882002A965F /* VMWare */ = {
+			isa = PBXGroup;
+			children = (
+				445A26141D849882002A965F /* includeCheck.h */,
+				445A26151D849882002A965F /* libvixAllProducts.dylib */,
+				445A26161D849882002A965F /* open_source_licenses.txt */,
+				445A26171D849882002A965F /* vix.h */,
+				445A26181D849882002A965F /* vm_basic_types.h */,
+			);
+			path = VMWare;
+			sourceTree = "<group>";
+		};
+		445A26591D85D4AF002A965F /* Generated */ = {
+			isa = PBXGroup;
+			children = (
+				445A265A1D85D4AF002A965F /* test_listings.h */,
+			);
+			path = Generated;
+			sourceTree = "<group>";
+		};
+		445A265D1D85D80C002A965F /* Generated */ = {
+			isa = PBXGroup;
+			children = (
+				44D0BD7A1D8734FC00742637 /* LFSGeneratedTests.m */,
+			);
+			path = Generated;
+			sourceTree = "<group>";
+		};
+		445A26801D863B5B002A965F /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				445A26811D863B5B002A965F /* apple_private.c */,
+				445A26821D863B5B002A965F /* apple_private.h */,
+				445A26831D863B5B002A965F /* apple_private_functions.h */,
+				445A26841D863B5B002A965F /* apple_private_types.h */,
+				445A26851D863B5B002A965F /* assert.h */,
+				445A26861D863B5B002A965F /* list.c */,
+				445A26871D863B5B002A965F /* list.h */,
+				445A26881D863B5B002A965F /* logging.c */,
+				445A26891D863B5B002A965F /* logging.h */,
+				445A268A1D863B5B002A965F /* rb_tree.c */,
+				445A268B1D863B5B002A965F /* rb_tree.h */,
+				44E101931D91CBFE00A8E699 /* extensions.c */,
+				44E101941D91CBFE00A8E699 /* extensions.h */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		445FC35D1D8C29A400022D53 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				445FC35E1D8C29B200022D53 /* constants.h */,
+				445FC35F1D8C29ED00022D53 /* mount_args.h */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		44BA8ECA1D99AA8000312FDA /* Scripts */ = {
+			isa = PBXGroup;
+			children = (
+				44BA8ECE1D99AA8000312FDA /* Filesystem */,
+				44BA8ECB1D99AA8000312FDA /* Extension */,
+				44BA8ED11D99AA8000312FDA /* NetFS */,
+			);
+			path = Scripts;
+			sourceTree = "<group>";
+		};
+		44BA8ECB1D99AA8000312FDA /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				44BA8ECD1D99AA8000312FDA /* preinstall */,
+				44BA8ECC1D99AA8000312FDA /* postinstall */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		44BA8ECE1D99AA8000312FDA /* Filesystem */ = {
+			isa = PBXGroup;
+			children = (
+				44BA8ED01D99AA8000312FDA /* preinstall */,
+				44BA8ECF1D99AA8000312FDA /* postinstall */,
+			);
+			path = Filesystem;
+			sourceTree = "<group>";
+		};
+		44BA8ED11D99AA8000312FDA /* NetFS */ = {
+			isa = PBXGroup;
+			children = (
+				44BA8ED31D99AA8000312FDA /* preinstall */,
+				44BA8ED21D99AA8000312FDA /* postinstall */,
+			);
+			path = NetFS;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		445A24BA1D83B48C002A965F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4482F8691D9620B0001B8C3E /* volume.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		445A24FF1D83CCC8002A965F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				445A26961D863B5B002A965F /* logging.h in Headers */,
+				44D0BD771D87327A00742637 /* vnop.h in Headers */,
+				44E101961D91CBFE00A8E699 /* extensions.h in Headers */,
+				445A26901D863B5B002A965F /* apple_private_functions.h in Headers */,
+				445A26981D863B5B002A965F /* rb_tree.h in Headers */,
+				445A268D1D863B5B002A965F /* lustre.h in Headers */,
+				445A26921D863B5B002A965F /* assert.h in Headers */,
+				445A268F1D863B5B002A965F /* apple_private.h in Headers */,
+				44D0BD731D87327A00742637 /* mount.h in Headers */,
+				44D0BD751D87327A00742637 /* vfsop.h in Headers */,
+				445A26941D863B5B002A965F /* list.h in Headers */,
+				445A26911D863B5B002A965F /* apple_private_types.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		445A26291D85AC05002A965F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				445A26441D85AD80002A965F /* test.h in Headers */,
+				445A265B1D85D4AF002A965F /* test_listings.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		445A24BC1D83B48C002A965F /* Filesystem */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 445A24C51D83B48C002A965F /* Build configuration list for PBXNativeTarget "Filesystem" */;
+			buildPhases = (
+				445A24B81D83B48C002A965F /* Sources */,
+				445A24B91D83B48C002A965F /* Frameworks */,
+				445A24BA1D83B48C002A965F /* Headers */,
+				445A24BB1D83B48C002A965F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				445A250E1D83CCFF002A965F /* PBXTargetDependency */,
+			);
+			name = Filesystem;
+			productName = Lustre;
+			productReference = 445A24BD1D83B48C002A965F /* lustre.fs */;
+			productType = "com.apple.product-type.kernel-extension";
+		};
+		445A24F11D83CBBE002A965F /* mount */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 445A24F61D83CBBF002A965F /* Build configuration list for PBXNativeTarget "mount" */;
+			buildPhases = (
+				445A24EE1D83CBBE002A965F /* Sources */,
+				445A24EF1D83CBBE002A965F /* Frameworks */,
+				445A24F01D83CBBE002A965F /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = mount;
+			productName = mount;
+			productReference = 445A24F21D83CBBE002A965F /* mount_lustre */;
+			productType = "com.apple.product-type.tool";
+		};
+		445A25011D83CCC8002A965F /* Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 445A25071D83CCC8002A965F /* Build configuration list for PBXNativeTarget "Extension" */;
+			buildPhases = (
+				445A24FD1D83CCC8002A965F /* Sources */,
+				445A24FE1D83CCC8002A965F /* Frameworks */,
+				445A24FF1D83CCC8002A965F /* Headers */,
+				445A25001D83CCC8002A965F /* Resources */,
+				445A267D1D85EADD002A965F /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Extension;
+			productName = Extension;
+			productReference = 445A25021D83CCC8002A965F /* Lustre.kext */;
+			productType = "com.apple.product-type.kernel-extension";
+		};
+		445A25171D849741002A965F /* Utility */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 445A25261D849741002A965F /* Build configuration list for PBXNativeTarget "Utility" */;
+			buildPhases = (
+				445A25141D849741002A965F /* Sources */,
+				445A25151D849741002A965F /* Frameworks */,
+				445A25161D849741002A965F /* Resources */,
+				445A267B1D85E4D8002A965F /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Utility;
+			productName = "Lustre Utility";
+			productReference = 445A25181D849741002A965F /* Lustre Utility.app */;
+			productType = "com.apple.product-type.application";
+		};
+		445A262B1D85AC05002A965F /* Extension Test */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 445A26311D85AC05002A965F /* Build configuration list for PBXNativeTarget "Extension Test" */;
+			buildPhases = (
+				445A26271D85AC05002A965F /* Sources */,
+				445A26281D85AC05002A965F /* Frameworks */,
+				445A26291D85AC05002A965F /* Headers */,
+				445A262A1D85AC05002A965F /* Resources */,
+				445A26371D85ACCE002A965F /* Run Script */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				445A26351D85AC73002A965F /* PBXTargetDependency */,
+			);
+			name = "Extension Test";
+			productName = Test;
+			productReference = 445A262C1D85AC05002A965F /* lustre-test.kext */;
+			productType = "com.apple.product-type.kernel-extension";
+		};
+		445A264E1D85ADBB002A965F /* Test Runner */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 445A26561D85ADBB002A965F /* Build configuration list for PBXNativeTarget "Test Runner" */;
+			buildPhases = (
+				445A264B1D85ADBB002A965F /* Sources */,
+				445A264C1D85ADBB002A965F /* Frameworks */,
+				445A264D1D85ADBB002A965F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				445A26551D85ADBB002A965F /* PBXTargetDependency */,
+			);
+			name = "Test Runner";
+			productName = "Test Runner";
+			productReference = 445A264F1D85ADBB002A965F /* Test Runner.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		445A26631D85DBE7002A965F /* NetFS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 445A26671D85DBE7002A965F /* Build configuration list for PBXNativeTarget "NetFS" */;
+			buildPhases = (
+				445A26601D85DBE7002A965F /* Sources */,
+				445A26611D85DBE7002A965F /* Frameworks */,
+				445A26621D85DBE7002A965F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NetFS;
+			productName = NetFS;
+			productReference = 445A26641D85DBE7002A965F /* Lustre.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		445A24B41D83B48C002A965F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = "Cider Apps, LLC.";
+				TargetAttributes = {
+					445A24BC1D83B48C002A965F = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 3FSTQKR2FT;
+						ProvisioningStyle = Manual;
+					};
+					445A24F11D83CBBE002A965F = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 3FSTQKR2FT;
+						ProvisioningStyle = Manual;
+					};
+					445A25011D83CCC8002A965F = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 3FSTQKR2FT;
+						ProvisioningStyle = Manual;
+					};
+					445A25171D849741002A965F = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 3FSTQKR2FT;
+						ProvisioningStyle = Manual;
+					};
+					445A262B1D85AC05002A965F = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 3FSTQKR2FT;
+						ProvisioningStyle = Manual;
+					};
+					445A264E1D85ADBB002A965F = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 3FSTQKR2FT;
+						ProvisioningStyle = Manual;
+						TestTargetID = 445A25171D849741002A965F;
+					};
+					445A26631D85DBE7002A965F = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 3FSTQKR2FT;
+						ProvisioningStyle = Manual;
+					};
+				};
+			};
+			buildConfigurationList = 445A24B71D83B48C002A965F /* Build configuration list for PBXProject "Lustre" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 445A24B31D83B48C002A965F;
+			productRefGroup = 445A24BE1D83B48C002A965F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				445A24BC1D83B48C002A965F /* Filesystem */,
+				445A25011D83CCC8002A965F /* Extension */,
+				445A24F11D83CBBE002A965F /* mount */,
+				445A26631D85DBE7002A965F /* NetFS */,
+				445A262B1D85AC05002A965F /* Extension Test */,
+				445A264E1D85ADBB002A965F /* Test Runner */,
+				445A25171D849741002A965F /* Utility */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		445A24BB1D83B48C002A965F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				44C6DF3D1D8C7440007CAA7C /* InfoPlist.strings in Resources */,
+				445A25111D844A58002A965F /* mount_lustre in Resources */,
+				445FC35C1D8B392B00022D53 /* lustre.icns in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		445A25001D83CCC8002A965F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				44C6DF3F1D90737C007CAA7C /* lustre.icns in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		445A25161D849741002A965F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				445A26251D849898002A965F /* Utility.xcassets in Resources */,
+				445A26231D849882002A965F /* open_source_licenses.txt in Resources */,
+				445A25BE1D84978D002A965F /* com.ciderapps.lustre.Utility.plist in Resources */,
+				445A25C21D84978D002A965F /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		445A262A1D85AC05002A965F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		445A264D1D85ADBB002A965F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		445A26621D85DBE7002A965F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				44C6DF3E1D9072DD007CAA7C /* lustre.icns in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		445A26371D85ACCE002A965F /* Run Script */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Run Script";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "#kextutil -tnz ${CODESIGNING_FOLDER_PATH} -r ${BUILT_PRODUCTS_DIR}";
+		};
+		445A267D1D85EADD002A965F /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "#kextutil -tnz ${CODESIGNING_FOLDER_PATH}";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		445A24B81D83B48C002A965F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		445A24EE1D83CBBE002A965F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				447B1FDE1D88371900D542CE /* main.m in Sources */,
+				445FC35B1D89EF9800022D53 /* LFSMount.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		445A24FD1D83CCC8002A965F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				44C6DF3C1D8C6DF4007CAA7C /* mount.c in Sources */,
+				445A26971D863B5B002A965F /* rb_tree.c in Sources */,
+				445A250A1D83CCEC002A965F /* lustre.c in Sources */,
+				44D0BD761D87327A00742637 /* vnop.c in Sources */,
+				445A268E1D863B5B002A965F /* apple_private.c in Sources */,
+				44E101951D91CBFE00A8E699 /* extensions.c in Sources */,
+				445A26951D863B5B002A965F /* logging.c in Sources */,
+				4482F86A1D9620B6001B8C3E /* volume.c in Sources */,
+				44D0BD741D87327A00742637 /* vfsop.c in Sources */,
+				445A26931D863B5B002A965F /* list.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		445A25141D849741002A965F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				445A25BD1D84978D002A965F /* AppDelegate.m in Sources */,
+				447B1FE11D88486500D542CE /* LFSMount.m in Sources */,
+				445A25C71D84978D002A965F /* LFSMachineRunner.m in Sources */,
+				445A25D11D84978D002A965F /* LFSVix.m in Sources */,
+				445A25C61D84978D002A965F /* LFSMachineDaemon.m in Sources */,
+				445A25D01D84978D002A965F /* LFSVirtualMachine.m in Sources */,
+				445A25C11D84978D002A965F /* main.m in Sources */,
+				445A25CE1D84978D002A965F /* LFSRealMachine.m in Sources */,
+				445A25C51D84978D002A965F /* LFSMachine.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		445A26271D85AC05002A965F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				445A26451D85AD80002A965F /* sample_test.c in Sources */,
+				445A26431D85AD80002A965F /* test.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		445A264B1D85ADBB002A965F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				447B1FE01D88485900D542CE /* LFSMountTestCase.m in Sources */,
+				445A265C1D85D7C8002A965F /* LFSTestCase.m in Sources */,
+				44D0BD7B1D8734FC00742637 /* LFSGeneratedTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		445A26601D85DBE7002A965F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				445A26761D85DC1F002A965F /* netfs.m in Sources */,
+				445FC35A1D89EF9500022D53 /* LFSMount.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		445A250E1D83CCFF002A965F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 445A24F11D83CBBE002A965F /* mount */;
+			targetProxy = 445A250D1D83CCFF002A965F /* PBXContainerItemProxy */;
+		};
+		445A26351D85AC73002A965F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 445A24BC1D83B48C002A965F /* Filesystem */;
+			targetProxy = 445A26341D85AC73002A965F /* PBXContainerItemProxy */;
+		};
+		445A26551D85ADBB002A965F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 445A25171D849741002A965F /* Utility */;
+			targetProxy = 445A26541D85ADBB002A965F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		445A25331D84978D002A965F /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				445A25341D84978D002A965F /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		445FC3681D8C647000022D53 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				445FC3691D8C647000022D53 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		445A24C31D83B48C002A965F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				VALID_ARCHS = x86_64;
+			};
+			name = Debug;
+		};
+		445A24C41D83B48C002A965F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+				VALID_ARCHS = x86_64;
+			};
+			name = Release;
+		};
+		445A24C61D83B48C002A965F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "Developer ID Application";
+				DEVELOPMENT_TEAM = 3FSTQKR2FT;
+				INFOPLIST_FILE = "Filesystem/Filesystem-Info.plist";
+				INSTALL_PATH = /Library/Filesystems;
+				MODULE_NAME = com.ciderapps.lustre.filesystem;
+				MODULE_VERSION = 1.0.0d1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ciderapps.Lustre;
+				PRODUCT_NAME = lustre;
+				WRAPPER_EXTENSION = fs;
+			};
+			name = Debug;
+		};
+		445A24C71D83B48C002A965F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "Developer ID Application";
+				DEVELOPMENT_TEAM = 3FSTQKR2FT;
+				INFOPLIST_FILE = "Filesystem/Filesystem-Info.plist";
+				INSTALL_PATH = /Library/Filesystems;
+				MODULE_NAME = com.ciderapps.lustre.filesystem;
+				MODULE_VERSION = 1.0.0d1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ciderapps.Lustre;
+				PRODUCT_NAME = lustre;
+				WRAPPER_EXTENSION = fs;
+			};
+			name = Release;
+		};
+		445A24F71D83CBBF002A965F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "Developer ID Application";
+				DEVELOPMENT_TEAM = 3FSTQKR2FT;
+				PRODUCT_NAME = mount_lustre;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		445A24F81D83CBBF002A965F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "Developer ID Application";
+				DEVELOPMENT_TEAM = 3FSTQKR2FT;
+				PRODUCT_NAME = mount_lustre;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		445A25081D83CCC8002A965F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "Developer ID Application";
+				DEVELOPMENT_TEAM = 3FSTQKR2FT;
+				INFOPLIST_FILE = "Filesystem/Extension-Info.plist";
+				MODULE_NAME = com.ciderapps.lustre.Extension;
+				MODULE_START = lustre_start;
+				MODULE_STOP = lustre_stop;
+				MODULE_VERSION = 1.0.0d1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ciderapps.lustre.Extension;
+				PRODUCT_NAME = Lustre;
+				WARNING_CFLAGS = "-Wno-documentation";
+				WRAPPER_EXTENSION = kext;
+			};
+			name = Debug;
+		};
+		445A25091D83CCC8002A965F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "Developer ID Application";
+				DEVELOPMENT_TEAM = 3FSTQKR2FT;
+				EXPORTED_SYMBOLS_FILE = Filesystem/lustre.exp;
+				INFOPLIST_FILE = "Filesystem/Extension-Info.plist";
+				MODULE_NAME = com.ciderapps.lustre.Extension;
+				MODULE_START = lustre_start;
+				MODULE_STOP = lustre_stop;
+				MODULE_VERSION = 1.0.0d1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ciderapps.lustre.Extension;
+				PRODUCT_NAME = Lustre;
+				WARNING_CFLAGS = "-Wno-documentation";
+				WRAPPER_EXTENSION = kext;
+			};
+			name = Release;
+		};
+		445A25271D849741002A965F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 445A26261D849C86002A965F /* Utility.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Developer ID Application";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 3FSTQKR2FT;
+				GCC_PREFIX_HEADER = "Utility/App/Utility-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"UTILITY_VM=\\\"\"$UTILITY_VM\"\\\"",
+					"UTILITY_SNAPSHOT=\\\"\"$UTILITY_SNAPSHOT\"\\\"",
+					"UTILITY_HOSTNAME=\\\"\"$UTILITY_HOSTNAME\"\\\"",
+				);
+				INFOPLIST_FILE = Utility/App/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Vendor/VMWare",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ciderapps.lustre.Utility;
+				PRODUCT_NAME = "Lustre Utility";
+			};
+			name = Debug;
+		};
+		445A25281D849741002A965F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 445A26261D849C86002A965F /* Utility.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Developer ID Application";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 3FSTQKR2FT;
+				GCC_PREFIX_HEADER = "Utility/App/Utility-Prefix.pch";
+				INFOPLIST_FILE = Utility/App/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Vendor/VMWare",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ciderapps.lustre.Utility;
+				PRODUCT_NAME = "Lustre Utility";
+			};
+			name = Release;
+		};
+		445A26321D85AC05002A965F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "Developer ID Application";
+				DEVELOPMENT_TEAM = 3FSTQKR2FT;
+				INFOPLIST_FILE = "Tests/Filesystem/Test-Extension-Info.plist";
+				MODULE_NAME = com.ciderapps.lustre.Test;
+				MODULE_START = lustre_test_start;
+				MODULE_STOP = lustre_test_stop;
+				MODULE_VERSION = 1.0.0d1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ciderapps.lustre.Test;
+				PRODUCT_NAME = "lustre-test";
+				WRAPPER_EXTENSION = kext;
+			};
+			name = Debug;
+		};
+		445A26331D85AC05002A965F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "Developer ID Application";
+				DEVELOPMENT_TEAM = 3FSTQKR2FT;
+				INFOPLIST_FILE = "Tests/Filesystem/Test-Extension-Info.plist";
+				MODULE_NAME = com.ciderapps.lustre.Test;
+				MODULE_START = lustre_test_start;
+				MODULE_STOP = lustre_test_stop;
+				MODULE_VERSION = 1.0.0d1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ciderapps.lustre.Test;
+				PRODUCT_NAME = "lustre-test";
+				WRAPPER_EXTENSION = kext;
+			};
+			name = Release;
+		};
+		445A26571D85ADBB002A965F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "Developer ID Application";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 3FSTQKR2FT;
+				INFOPLIST_FILE = "Tests/Filesystem Test Runner/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ciderapps.lustre.Test-Runner";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Lustre Utility.app/Contents/MacOS/Lustre Utility";
+			};
+			name = Debug;
+		};
+		445A26581D85ADBB002A965F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "Developer ID Application";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 3FSTQKR2FT;
+				INFOPLIST_FILE = "Tests/Filesystem Test Runner/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ciderapps.lustre.Test-Runner";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Lustre Utility.app/Contents/MacOS/Lustre Utility";
+			};
+			name = Release;
+		};
+		445A26681D85DBE7002A965F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "Developer ID Application";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 3FSTQKR2FT;
+				INFOPLIST_FILE = NetFS/Info.plist;
+				INSTALL_PATH = /Library/Filesystems/NetFSPlugins;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ciderapps.lustre.NetFS;
+				PRODUCT_NAME = Lustre;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		445A26691D85DBE7002A965F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "Developer ID Application";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 3FSTQKR2FT;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				INFOPLIST_FILE = NetFS/Info.plist;
+				INSTALL_PATH = /Library/Filesystems/NetFSPlugins;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ciderapps.lustre.NetFS;
+				PRODUCT_NAME = Lustre;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		445A24B71D83B48C002A965F /* Build configuration list for PBXProject "Lustre" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				445A24C31D83B48C002A965F /* Debug */,
+				445A24C41D83B48C002A965F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		445A24C51D83B48C002A965F /* Build configuration list for PBXNativeTarget "Filesystem" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				445A24C61D83B48C002A965F /* Debug */,
+				445A24C71D83B48C002A965F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		445A24F61D83CBBF002A965F /* Build configuration list for PBXNativeTarget "mount" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				445A24F71D83CBBF002A965F /* Debug */,
+				445A24F81D83CBBF002A965F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		445A25071D83CCC8002A965F /* Build configuration list for PBXNativeTarget "Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				445A25081D83CCC8002A965F /* Debug */,
+				445A25091D83CCC8002A965F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		445A25261D849741002A965F /* Build configuration list for PBXNativeTarget "Utility" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				445A25271D849741002A965F /* Debug */,
+				445A25281D849741002A965F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		445A26311D85AC05002A965F /* Build configuration list for PBXNativeTarget "Extension Test" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				445A26321D85AC05002A965F /* Debug */,
+				445A26331D85AC05002A965F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		445A26561D85ADBB002A965F /* Build configuration list for PBXNativeTarget "Test Runner" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				445A26571D85ADBB002A965F /* Debug */,
+				445A26581D85ADBB002A965F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		445A26671D85DBE7002A965F /* Build configuration list for PBXNativeTarget "NetFS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				445A26681D85DBE7002A965F /* Debug */,
+				445A26691D85DBE7002A965F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 445A24B41D83B48C002A965F /* Project object */;
+}

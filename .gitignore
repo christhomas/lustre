@@ -1,0 +1,5 @@
+Build
+Tests/Filesystem/Generated
+Tests/Filesystem Test Runner/Generated
+.DS_Store
+**/xcuserdata
