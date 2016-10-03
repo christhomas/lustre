@@ -45,10 +45,10 @@
 		445FC35B1D89EF9800022D53 /* LFSMount.m in Sources */ = {isa = PBXBuildFile; fileRef = 447B1FDB1D88370800D542CE /* LFSMount.m */; };
 		445FC35C1D8B392B00022D53 /* lustre.icns in Resources */ = {isa = PBXBuildFile; fileRef = 445A24E31D83CB85002A965F /* lustre.icns */; };
 		447B1FDE1D88371900D542CE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 447B1FDD1D88371900D542CE /* main.m */; };
-		447B1FE01D88485900D542CE /* LFSMountTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 447B1FDF1D88485900D542CE /* LFSMountTestCase.m */; };
 		447B1FE11D88486500D542CE /* LFSMount.m in Sources */ = {isa = PBXBuildFile; fileRef = 447B1FDB1D88370800D542CE /* LFSMount.m */; };
 		4482F8691D9620B0001B8C3E /* volume.h in Headers */ = {isa = PBXBuildFile; fileRef = 4482F8671D9620B0001B8C3E /* volume.h */; };
 		4482F86A1D9620B6001B8C3E /* volume.c in Sources */ = {isa = PBXBuildFile; fileRef = 4482F8661D9620B0001B8C3E /* volume.c */; };
+		44A5AA2F1D9D9CD000E5C990 /* LFSMountTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 44A5AA2E1D9D9CD000E5C990 /* LFSMountTestCase.m */; };
 		44C6DF3C1D8C6DF4007CAA7C /* mount.c in Sources */ = {isa = PBXBuildFile; fileRef = 44D0BD6A1D87327A00742637 /* mount.c */; };
 		44C6DF3D1D8C7440007CAA7C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 445FC3681D8C647000022D53 /* InfoPlist.strings */; };
 		44C6DF3E1D9072DD007CAA7C /* lustre.icns in Resources */ = {isa = PBXBuildFile; fileRef = 445A24E31D83CB85002A965F /* lustre.icns */; };
@@ -177,9 +177,9 @@
 		447B1FDA1D88370800D542CE /* LFSMount.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LFSMount.h; sourceTree = "<group>"; };
 		447B1FDB1D88370800D542CE /* LFSMount.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LFSMount.m; sourceTree = "<group>"; };
 		447B1FDD1D88371900D542CE /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		447B1FDF1D88485900D542CE /* LFSMountTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LFSMountTestCase.m; sourceTree = "<group>"; };
 		4482F8661D9620B0001B8C3E /* volume.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = volume.c; sourceTree = "<group>"; };
 		4482F8671D9620B0001B8C3E /* volume.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = volume.h; sourceTree = "<group>"; };
+		44A5AA2E1D9D9CD000E5C990 /* LFSMountTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LFSMountTestCase.m; sourceTree = "<group>"; };
 		44BA8EC21D99A8A200312FDA /* Distribution.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Distribution.xml; sourceTree = "<group>"; };
 		44BA8EC31D99A8A200312FDA /* package.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = package.sh; sourceTree = "<group>"; };
 		44BA8EC71D99AA8000312FDA /* Extension-Components.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Extension-Components.plist"; sourceTree = "<group>"; };
@@ -367,7 +367,6 @@
 			isa = PBXGroup;
 			children = (
 				445A265D1D85D80C002A965F /* Generated */,
-				447B1FDF1D88485900D542CE /* LFSMountTestCase.m */,
 				445A26461D85AD96002A965F /* LFSTestCase.h */,
 				445A26471D85AD96002A965F /* LFSTestCase.m */,
 				445A26481D85AD96002A965F /* Info.plist */,
@@ -379,6 +378,7 @@
 		445A24E71D83CB85002A965F /* NetFS */ = {
 			isa = PBXGroup;
 			children = (
+				44A5AA2E1D9D9CD000E5C990 /* LFSMountTestCase.m */,
 			);
 			path = NetFS;
 			sourceTree = "<group>";
@@ -722,7 +722,7 @@
 		445A24B41D83B48C002A965F /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0800;
+				LastUpgradeCheck = 0810;
 				ORGANIZATIONNAME = "Cider Apps, LLC.";
 				TargetAttributes = {
 					445A24BC1D83B48C002A965F = {
@@ -934,7 +934,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				447B1FE01D88485900D542CE /* LFSMountTestCase.m in Sources */,
+				44A5AA2F1D9D9CD000E5C990 /* LFSMountTestCase.m in Sources */,
 				445A265C1D85D7C8002A965F /* LFSTestCase.m in Sources */,
 				44D0BD7B1D8734FC00742637 /* LFSGeneratedTests.m in Sources */,
 			);
@@ -1007,6 +1007,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -1053,6 +1054,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;

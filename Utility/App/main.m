@@ -46,9 +46,9 @@ int main(int argc, const char * argv[])
             } else {
                 return EXIT_FAILURE;
             }
-        } else if ([arguments containsObject:@"-run"]) {
-            LFSMachine *    machine;
-            NSError *       error;
+        } else if ([arguments containsObject:@"-deploy"]) {
+            LFSMachine *        machine;
+            __block NSError *   error;
 
             error = nil;
             
@@ -58,14 +58,22 @@ int main(int argc, const char * argv[])
                 machine = [[LFSRealMachine alloc] initWithHostname:@UTILITY_HOSTNAME];
             }
             
-            if (![machine configure:&error]) {
-                os_log_error(lfsLogger, "%{public}@", [error localizedDescription]);
-                exit(EXIT_FAILURE);
-            }
-
-            return NSApplicationMain(argc, argv);
+            dispatch_async(dispatch_get_global_queue(QOS_CLASS_USER_INITIATED, 0), ^{
+                if (![machine configure:&error]) {
+                    os_log_error(lfsLogger, "%{public}@", [error localizedDescription]);
+                    exit(EXIT_FAILURE);
+                } else {
+                    exit(EXIT_SUCCESS);
+                }
+            });
+            
+            [[NSRunLoop currentRunLoop] run];
+            
+            return EXIT_SUCCESS;
         } else if ([arguments containsObject:@"-test"]) {
             return NSApplicationMain(argc, argv);
+        } else {
+            return EXIT_FAILURE;
         }
     }
 }

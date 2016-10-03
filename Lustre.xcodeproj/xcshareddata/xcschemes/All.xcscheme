@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0800"
+   LastUpgradeVersion = "0810"
    version = "1.7">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -49,7 +49,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "445A25011D83CCC8002A965F"
-               BuildableName = "lustre.kext"
+               BuildableName = "Lustre.kext"
                BlueprintName = "Extension"
                ReferencedContainer = "container:Lustre.xcodeproj">
             </BuildableReference>
@@ -190,7 +190,7 @@
       </BuildableProductRunnable>
       <CommandLineArguments>
          <CommandLineArgument
-            argument = "-run"
+            argument = "-deploy"
             isEnabled = "YES">
          </CommandLineArgument>
          <CommandLineArgument
@@ -218,7 +218,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "445A25011D83CCC8002A965F"
-            BuildableName = "lustre.kext"
+            BuildableName = "Lustre.kext"
             BlueprintName = "Extension"
             ReferencedContainer = "container:Lustre.xcodeproj">
          </BuildableReference>
